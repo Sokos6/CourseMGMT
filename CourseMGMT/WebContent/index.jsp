@@ -15,10 +15,45 @@
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
 </head>
 <body>
- <form action="rest/GetCourses" method="GET">
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="http://localhost:8080/CourseMGMT/index.jsp">CourseMGMT</a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="http://localhost:8080/CourseMGMT/allCourses.html">All Courses <span class="sr-only">(current)</span></a></li>
+        <li><a href="http://localhost:8080/CourseMGMT/addCourse.jsp">Add Course</a></li>
+   	</ul>
+   	</div>
+   	</div>
+ <!-- <form action="rest/GetCourses" method="GET">
 		Name:
 		<input type="text" name="name"/> 
 		<input type="submit"/>
-	</form>
+	</form> -->
+<body>
+	<div id="newcourse">
+	
+	</div>
+	
+	<div id="courseList">
+	</div>
+    <div id="button1">
+        <button type="submit" class="btn btn-default" id="btn1">List All Courses</button>
+        <button id="newbutton" class="btn btn-default">New Course</button>
+    </div>
+    
+    <script src="js/coursejs.js"></script>
+</body>
 </body>
 </html>

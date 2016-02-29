@@ -16,6 +16,27 @@
 <title>Insert title here</title>
 </head>
 <body>
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="http://localhost:8080/CourseMGMT/index.jsp">CourseMGMT</a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="http://localhost:8080/CourseMGMT/allCourses.html">All Courses <span class="sr-only">(current)</span></a></li>
+        <li><a href="http://localhost:8080/CourseMGMT/addCourse.jsp">Add Course</a></li>
+   	</ul>
+   	</div>
+   	</div>
 	<h2>Add Course</h2>
 	<c:if test="${not empty error}">
 		<span style="color: red;"> ${error}<br>
